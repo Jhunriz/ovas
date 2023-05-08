@@ -9,6 +9,8 @@ $schedule = $_GET['schedule'];
         <dl>
             <dt class="text-muted">Appointment Schedule</dt>
             <dd class=" pl-3"><b><?= date("F d, Y", strtotime($schedule)) ?></b></dd>
+
+
         </dl>
         <hr>
         <div class="row">
@@ -134,8 +136,7 @@ $schedule = $_GET['schedule'];
                     if (resp.status == 'success') {
                         end_loader();
                         setTimeout(() => {
-                            uni_modal("Success", "success_msg.php?code=" + resp.code)
-
+                            uni_modal("Success", "success_msg.php?code=" + resp.code + "&owner_name=" + encodeURIComponent($('#owner_name').val()));
                         }, 750);
                     } else if (!!resp.msg) {
                         el.addClass("alert-danger")
