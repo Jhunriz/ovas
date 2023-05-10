@@ -10,7 +10,7 @@
 	<div class="card-header">
 		<h3 class="card-title">List of Category <small><em>(Pet Types)</em></small></h3>
 		<div class="card-tools">
-			<a href="javascript:void(0)" id="create_new" class="btn btn-flat btn-sm btn-primary"><span class="fas fa-plus"></span> Add New</a>
+			<a href="javascript:void(0)" id="create_new" class="btn btn-flat btn-sm btn-dark"><span class="fas fa-plus"></span> Add New</a>
 		</div>
 	</div>
 	<div class="card-body">

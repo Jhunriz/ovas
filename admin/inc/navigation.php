@@ -47,6 +47,14 @@
                   </p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url ?>admin/qr/scanner.php" class="nav-link nav-scanner">
+                  <i class="nav-icon fas fa-barcode"></i>
+                  <p>
+                    Scanner
+                  </p>
+                </a>
+              </li>
               <?php if ($_settings->userdata('type') == 1) : ?>
                 <li class="nav-header">Maintenance</li>
                 <li class="nav-item dropdown">
