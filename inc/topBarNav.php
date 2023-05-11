@@ -31,10 +31,10 @@
     padding-top: calc(3.2em) !important
   }
 </style>
-<nav class="w-100 px-2 py-1 position-fixed top-0 bg-light text-dark" id="login-nav">
+<nav class="w-100 px-2 py-1 position-fixed top-0" id="login-nav" style="background-color:gray;">
   <div class="d-flex justify-content-between w-100">
     <div>
-      <span class="mr-2"><i class="fa fa-phone mr-1"></i> <?= $_settings->info('contact') ?></span>
+      <!-- <span class="mr-2"><i class="fa fa-phone mr-1"></i> <?= $_settings->info('contact') ?></span> -->
     </div>
     <div>
       <?php if ($_settings->userdata('id') > 0) : ?>
@@ -46,7 +46,7 @@
           <span class="mx-1"><a href="<?= base_url . 'classes/Login.php?f=client_logout' ?>"><i class="fa fa-power-off"></i></a></span>
         <?php endif; ?>
       <?php else : ?>
-        <a href="./admin" class="mx-2 text-dark"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="height: 20px;">
+        <a href="./admin" class="mx-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="height: 20px;">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
           </svg>
           Admin</a>
